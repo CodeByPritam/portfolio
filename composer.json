@@ -1,0 +1,19 @@
+{
+    "name": "codebypritam/portfolio",
+    "description": "Empty Currently",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "CodeByPritam",
+            "email" : "contact@pritamadak.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "myproject\\app\\": "app/"
+        }
+    },
+    "require": {}
+}
