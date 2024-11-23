@@ -12,10 +12,16 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 set_time_limit(60);
 
+// Config
+$config = [
+    'isConstruction' => true
+];
+
 // My Application
-$app = new Application(dirname(__DIR__), $config = []);
+$app = new Application(dirname(__DIR__), $config);
 
 $app->router->get('/', [SiteController::class, 'home']);
+$app->router->get('/home', [SiteController::class, 'home']);
 
 // Run Application
 $app->run();

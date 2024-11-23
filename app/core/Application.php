@@ -18,6 +18,7 @@ namespace myproject\app\core;
 class Application {
 
     // Application : Defined Variables
+    public static string $appConstruction;
     public static string $rootpath;
     public static string $domainName;
     public static string $loginStatus;
@@ -40,6 +41,7 @@ class Application {
      * @param array  $config Configuration array containing application settings.
      */
     public function __construct(string $rootpath, array $config){
+        self::$appConstruction  = $config['isConstruction'];
         self::$rootpath         = $rootpath;
         self::$domainName       = $this->myURI();
         self::$app              = $this;

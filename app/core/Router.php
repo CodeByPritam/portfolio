@@ -176,7 +176,11 @@ class Router {
 
         ob_start();
         if(file_exists(Application::$rootpath . "/app/views/" . $viewName . ".php")) {
-            require_once Application::$rootpath . "/app/views/$viewName.php";
+            if (Application::$appConstruction) {
+                require_once Application::$rootpath . "/app/views/construction.php";
+            } else {
+                require_once Application::$rootpath . "/app/views/$viewName.php";
+            }
         } else {
             $this->response->setStatusCode(404);
             return $this->RenderView('error-page');
