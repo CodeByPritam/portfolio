@@ -1,0 +1,123 @@
+/* ==================================================== */
+/* ==================== Body Style ==================== */
+/* ==================================================== */
+.desktop {
+    background: var(--crust);
+    min-height: 100dvh;
+    padding: 24px;
+}
+
+.terminal {
+    background: var(--base);
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid var(--surface1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* ==================================================== */
+/* ===================== Title Bar ==================== */
+/* ==================================================== */
+.title-bar {
+    background: var(--mantle);
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--surface0);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    user-select: none;
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dot.dot-r { background: var(--red); }
+.dot.dot-y { background: var(--yellow); }
+.dot.dot-g { background: var(--green); }
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.title-bar b { color: var(--text); }
+.titlebar-text {
+    font-family: 'Cascadia Code', monospace;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--overlay1);
+    letter-spacing: .04em;
+    text-align: center;
+    flex: 1;
+}
+
+/* ==================================================== */
+/* ====================== Tab Bar ===================== */
+/* ==================================================== */
+.tab-bar {
+    background: var(--mantle);
+    padding: 0 20px;
+    border-bottom: 1px solid var(--surface0);
+    display: flex;
+    gap: 2px;
+    overflow-x: auto;
+}
+
+button.tab {
+    font-family: 'Cascadia Code', monospace;
+    font-size: 12px;
+    color: var(--overlay1);
+    font-weight: 500;
+    padding: 9px 18px 8px 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color .15s;
+}
+
+button.tab.active {
+    font-weight: 600;
+    color: var(--mauve);
+    border-bottom-color: var(--mauve);
+}
+
+/* ==================================================== */
+/* ===================== Status Bar =================== */
+/* ==================================================== */
+.status-bar {
+    background: var(--mauve);
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 16px;
+}
+
+.sb-item {
+    font-family: 'Cascadia Code', monospace;
+    font-size: 12px;
+    color: var(--crust);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.sb-item a {
+    font-weight: 600;
+    font-style: italic;
+    color: var(--base);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* ======================================================= */
+/* ===================== Terminal Body =================== */
+/* ======================================================= */
+#terminal-body {
+    padding: 24px 28px 32px;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>~/pritamadak/dev/portfolio</title>
+    <link rel="stylesheet" href="./assets/css/globals.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/app.css">
+</head>
+<body>
+
+    <!--- Desktop: Begin --->
+    <div class="desktop">
+        <div class="terminal" id="term">
+
+            <!--- Title Bar --->
+            <div class="title-bar">
+                <div class="dots">
+                    <div class="dot dot-r"></div>
+                    <div class="dot dot-y"></div>
+                    <div class="dot dot-g"></div>
+                </div>
+                <div class="titlebar-text"><b>dev@pritamadak</b> — <b>~/portfolio</b> — zsh</div>
+                <div style="width:54px"></div>
+            </div> 
+
+            <!--- Tab Bar --->
+            <div class="tab-bar">
+                <button class="tab active" onclick="switchTab('about')"> ~/about</button>
+                <button class="tab" onclick="switchTab('blog')"> ~/blog</button>
+                <button class="tab" onclick="switchTab('skills')">⚡skills</button>
+                <button class="tab" onclick="switchTab('projects')"> ~/projects</button>
+                <button class="tab" onclick="switchTab('education')"> ~/education</button>
+                <button class="tab" onclick="switchTab('experience')"> ~/experience</button>
+                <button class="tab" onclick="switchTab('contact')"> ~/contact</button>
+            </div>
+
+            <!--- Terminal Body --->
+            <div id="terminal-body">
+                <section class="section active" id="about">Hello, this is about page.</section>
+                <section class="section" id="blog">Publish your blog here.</section>
+                <section class="section" id="skills">Showcash your skilles.</section>
+                <section class="section" id="projects">How many projects you built.</section>
+                <section class="section" id="education">Your Education.</section>
+                <section class="section" id="experience">experience make dream work.</section>
+                <section class="section" id="contact">How should i contact you?</section>
+            </div>
+
+            <!--- Status Bar --->
+            <div class="status-bar">
+                <div class="sb-item">© 2026</div>
+                <div class="sb-item sb-sep">|</div>
+                <div class="sb-item git-branch">master</div>
+                <div class="sb-item sb-sep">|</div>
+                <div class="sb-item">[] portfolio.html</div>
+                <div style="flex:1"></div>
+                <div class="sb-item">Color By: <a href="#" target="_blank">Catppuccin Mocha</a></div>
+                <div class="sb-item sb-sep">|</div>
+                <div class="sb-item" id="clock">00:00:00</div>
+            </div>
+
+        </div>
+    </div>
+    <!--- Desktop: End --->
+
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script src="./assets/javascript/service.js"></script>
+</body>
+</html>

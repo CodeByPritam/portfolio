@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap');
+
+@font-face {
+    font-family: 'Monaspace Neon';
+    src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceNeon-Regular.woff2') format('woff2');
+    font-weight: 400; 
+    font-style: normal; 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Monaspace Neon';
+    src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceNeon-Bold.woff2') format('woff2');
+    font-weight: 700; 
+    font-style: normal; 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Monaspace Argon';
+    src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceArgon-Regular.woff2') format('woff2');
+    font-weight: 400; 
+    font-style: normal; 
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Monaspace Argon';
+    src: url('https://cdn.jsdelivr.net/gh/githubnext/monaspace@v1.101/fonts/webfonts/MonaspaceArgon-Light.woff2') format('woff2');
+    font-weight: 300; 
+    font-style: normal; 
+    font-display: swap;
+}
+
+:root {
+	--base:      #1e1e2e;
+    --mantle:    #181825;
+    --crust:     #11111b;
+    --surface0:  #313244;
+    --surface1:  #45475a;
+    --surface2:  #585b70;
+    --overlay0:  #6c7086;
+    --overlay1:  #7f849c;
+    --overlay2:  #9399b2;
+    --subtext0:  #a6adc8;
+    --subtext1:  #bac2de;
+    --text:      #cdd6f4;
+    --lavender:  #b4befe;
+    --blue:      #89b4fa;
+    --sapphire:  #74c7ec;
+    --sky:       #89dceb;
+    --teal:      #94e2d5;
+    --green:     #a6e3a1;
+    --yellow:    #f9e2af;
+    --peach:     #fab387;
+    --maroon:    #eba0ac;
+    --red:       #f38ba8;
+    --mauve:     #cba6f7;
+    --pink:      #f5c2e7;
+    --flamingo:  #f2cdcd;
+    --rosewater: #f5e0dc;
+}
+
+*,html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+ol,ul,
+li { list-style: none; }
+
+button:focus, a:focus, input:focus,
+textarea:focus { 
+    outline: none; 
+}
+
+::-webkit-scrollbar{ display: none; }
+a, a:hover { text-decoration: none; }
+a, button{
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
