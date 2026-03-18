@@ -4,3 +4,132 @@
 .section { display: none; }
 .section.active { display: block; }
 
+/* ========================================================== */
+/* ======================= About Section ==================== */
+/* ========================================================== */
+.prompt-block { margin-bottom: 16px; }
+.prompt-line {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--overlay1);
+}
+
+.p-user { color: var(--green); }
+.p-at { color: var(--overlay2); }
+.p-host { color: var(--blue); }
+.p-colon { color: var(--overlay2); }
+.p-path { color: var(--mauve); }
+.p-git { color: var(--yellow); }
+.cmd { color: var(--sky); }
+.arg { color: var(--peach); }
+.p-sym {
+    color: var(--peach);
+    margin-right: 8px;
+}
+span.cursor {
+    width: 8px;
+    height: 16px;
+    background: var(--mauve);
+    border-radius: 2px;
+    animation: blink 1.1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    } 50% {
+        opacity: 0;
+    }
+}
+
+.ascii-art {
+    white-space: pre;
+    color: var(--mauve);
+    font-family: 'Cascadia Code', monospace;
+    font-size: 10px;
+    margin-bottom: 20px;
+    border-left: 2px solid var(--surface1);
+}
+
+/* ===== Neo Fetch ====== */
+.neofetch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 32px;
+    margin: 10px 0;
+}
+
+.nf-art {
+    white-space: pre;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 10px;
+}
+
+.nf-info {
+    font-family: 'Cascadia Code', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.nf-row {
+    display: flex;
+    gap: 8px;
+    margin: 2px 0;
+}
+
+.nf-v { color: var(--text); }
+.nf-sep { color: var(--overlay0); }
+.nf-k {
+    color: var(--blue);
+    min-width: 90px;
+}
+
+.color-palette {
+    display: flex;
+    gap: 4px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.swatch {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+}
+
+/* ===== Divider ===== */
+.divider {
+    border: none;
+    border-top: 1px dashed var(--surface1);
+    margin: 24px 0;
+}
+
+/* ===== Whoami ===== */
+.output {
+    margin: 6px 0 20px;
+    border-left: 2px solid var(--surface1);
+    padding-left: 16px;
+    font-family: 'Cascadia Code', monospace;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.7;
+}
+
+.output-line { margin: 3px 0; }
+.key { color: var(--lavender); }
+.string { color: var(--green); }
+.num { color: var(--peach); }
+.bool { color: var(--mauve); }
+.comment {
+    color: var(--overlay0);
+    font-style: italic;
+}
+
+
+

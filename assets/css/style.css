@@ -119,5 +119,5 @@ button.tab.active {
 /* ===================== Terminal Body =================== */
 /* ======================================================= */
 #terminal-body {
-    padding: 24px 28px 32px;
+    padding: 24px 28px 32px 28px;
 }
